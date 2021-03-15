@@ -1,0 +1,68 @@
+#setting-screen {
+  height: 95vh;
+}
+
+#setting-screen .setting-header,
+#setting-screen .status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
+#setting-screen .status-bar {
+  width: 95%;
+}
+.setting-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  font-size: 20px;
+}
+.setting-header__column i {
+  position: absolute;
+  right: 20px;
+  top: 42px;
+}
+#setting-screen .setting-header {
+  z-index: 1;
+  padding: 40px 0 20px 0;
+  background-color: black;
+}
+#setting-screen .status-bar {
+  z-index: 2;
+}
+.main-setting {
+  z-index: 0;
+  margin-top: 160px;
+}
+
+.setting-list__setting {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.setting-list__setting:nth-child(5),
+.setting-list__setting:nth-child(8) {
+  margin-bottom: 30px;
+}
+.setting-list__setting-column {
+  font-size: 20px;
+  display: flex;
+}
+
+.setting-list__setting-column i {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.setting-list__setting-column span {
+  margin-right: 10px;
+}
+
+.setting-list__setting div:last-child i {
+  color: gray;
+}

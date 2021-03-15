@@ -1,0 +1,42 @@
+.call {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.call-header-icon {
+  margin-right: 10px;
+}
+
+.call-text {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-text h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.call-text span {
+  margin-top: 20px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.call-text h4 {
+  margin-top: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}

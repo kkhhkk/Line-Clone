@@ -1,0 +1,77 @@
+.communication {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px;
+}
+.communication h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.chats-communication {
+  display: flex;
+  align-items: center;
+}
+.chats-communication-icon i {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.chats-communication-icon .fa-plus {
+  color: white;
+  font-size: 3px;
+  position: absolute;
+  right: 9px;
+  top: 73px;
+}
+
+.chats-info {
+  display: flex;
+  align-items: center;
+}
+
+.chats-image img {
+  margin: 30px 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.chats-text {
+  margin-top: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+@keyframes messagecome {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.chats-new {
+  background-color: var(--green);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  right: 25px;
+  top: 190px;
+  color: white;
+  animation: messagecome 2s ease-in-out infinite;
+}
+
+.chats-new span {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}

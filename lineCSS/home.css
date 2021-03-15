@@ -1,0 +1,86 @@
+.profile {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-user {
+  display: flex;
+}
+.profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-name h4 {
+  margin-bottom: 10px;
+}
+
+.profile-name span {
+  font-size: 10px;
+  padding: 4px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.profile-icon i {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.home-group,
+.home-friend {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-group span,
+.home-friend span {
+  position: absolute;
+  left: 60px;
+}
+
+.home-service,
+.home-recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 25px;
+}
+.home-service span,
+.home-recommend span {
+  color: gray;
+  font-size: 15px;
+}
+
+.home-service-row,
+.home-sticker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 50px;
+}
+
+.home-sticker-row,
+.home-icon-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.home-icon-row i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.home-sticker-row img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}

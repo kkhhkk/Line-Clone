@@ -1,0 +1,152 @@
+#chat-screen {
+  height: 300vh;
+}
+
+.chatting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 10px;
+  font-size: 25px;
+}
+
+.chattting-communication {
+  display: flex;
+  align-items: center;
+}
+.chatting-communication span {
+  margin-left: 20px;
+}
+.chatting-communication-icon i {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 0.5s linear;
+}
+
+.chat__timestamp {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  padding: 13px;
+  background-color: gray;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__author,
+.message__time {
+  font-size: 13px;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+}
+
+.message-row__own .message__bubble {
+  padding: 13px;
+  background-color: gray;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.message-row__own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  box-sizing: border-box;
+}
+.reply i {
+  opacity: 0.6;
+}
+.reply .reply-column:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+}
+.reply .reply-column:first-child i {
+  font-size: 20px;
+}
+
+.reply .reply-column:nth-child {
+  width: 65%;
+  position: relative;
+}
+
+.reply .reply-column:last-child {
+  width: 8%;
+}
+.reply input {
+  padding: 10px 16px;
+  width: 100%;
+  border: var(--border-line-);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.reply-column:nth-child(2) > i {
+  position: absolute;
+  right: 90px;
+  top: 25px;
+}
